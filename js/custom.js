@@ -5,7 +5,7 @@
 
 	Royal_Preloader.config({
         mode:        'scale_text',
-        text:        'your digital solution',
+        text:        'Linking you tight',
         text_colour: '#f8f8f8',
 		background:  '#212121'
 	});
