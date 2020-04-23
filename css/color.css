@@ -24,17 +24,17 @@ ul.slimmenu li a.mPS2id-highlight,
 .journal-det .link:before,
 .journal-det-right .link:before,
 .pro-bar {
-	background: #cfa144;
+	background: #ff8000;
 }
 #sync2 .synced .item {
-	background:#cfa144;
+	background:#ff8000;
 }
 #cd-zoom-in, #cd-zoom-out,
 #ajax-form button:hover,
 .list-social-footer li:hover,
 #filter li .current,
 #filter li a:hover {
-	background-color: #cfa144;
+	background-color: #ff8000;
 }
 
 
@@ -42,21 +42,21 @@ ul.slimmenu li a.mPS2id-highlight,
 #ajax-form input:focus,
 #ajax-form textarea:active,
 #ajax-form input:active {	
-	border-bottom:1px solid #cfa144;
+	border-bottom:1px solid #ff8000;
 }
 ::selection {
-	background: #cfa144;
+	background: #ff8000;
 }
 ::-moz-selection {
-	background: #cfa144;
+	background: #ff8000;
 }
 
 @media only screen and (min-width: 1200px) {
 .journal-det{
-	border-right:3px solid #cfa144;
+	border-right:3px solid #ff8000;
 }
 .journal-det-right{
-	border-left:3px solid #cfa144;
+	border-left:3px solid #ff8000;
 }
 }
 
