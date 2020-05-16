@@ -358,10 +358,10 @@ body.royal_preloader {
 }
 .cbp-af-header.cbp-af-header-shrink .logo{
 	width:86px;
-	height:16px;
+	height:50px;
 	top:32px;
-	background:url('../images/logo.png') no-repeat center center;
-	background-size:86px 16px;
+	background:url('../images/logo.svg') no-repeat center center;
+	background-size:86px 50px;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
@@ -404,11 +404,11 @@ ul.slimmenu li ul {
 .logo{
 	position:absolute;
 	width:134px;
-	height:25px;
+	height:50px;
 	z-index:10000;
 	top:50px;
-	background:url('../images/logo.png') no-repeat center center;
-	background-size:134px 25px;
+	background:url('../images/logo.svg') no-repeat center center;
+	background-size:150px 50px;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
@@ -653,9 +653,25 @@ ul.slimmenu.collapsed li > ul {
 	background-color:#f9f9f9;
 }
 .full-img img {
-	width:100%;
-	display:block;
+	width:30%;
+	position: absolute;
+	right: 16px;
+	/* repeat: no-repeat; */
+	/* attachment: fixed; */
+	/* position: right;  */
+	/* display:block;
+ float: right;
+ clear:right; */
+    /* border:none; */
 }
+
+
+
+
+
+
+
+
 .over-hidden {
 	overflow:hidden;
 }  
@@ -2924,16 +2940,16 @@ figure.vimeo a img, figure.youtube a img {
 	height:15px;
 	left:10px;
 	top:30px;
-	background:url('../images/logo.png') no-repeat center center;
-	background-size:80px 15px;
+	background:url('../images/logo.svg') no-repeat center center;
+	background-size:80px 50px;
 }
 .cbp-af-header.cbp-af-header-shrink .logo{
 	width:80px;
 	height:15px;
 	left:10px;
 	top:30px;
-	background:url('../images/logo.png') no-repeat center center;
-	background-size:80px 15px;
+	background:url('../images/logo.svg') no-repeat center center;
+	background-size:80px 50px;
 	-webkit-transition : all 0.5s ease-out;
 	-moz-transition : all 0.5s ease-out;
 	-o-transition :all 0.5s ease-out;
