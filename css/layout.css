@@ -686,6 +686,8 @@ ul.slimmenu.collapsed li > ul {
 	overflow:hidden;
 }  
 
+
+
 .title-text {
     position:relative;
 	width:100%;
@@ -697,6 +699,17 @@ ul.slimmenu.collapsed li > ul {
 	font-family: 'Poppins', sans-serif;
 	font-weight:500;
 	font-size: 13px; 
+	line-height: 16px;
+	letter-spacing:1px;
+	color:#fff;
+}
+.title-text.right p{
+	position:relative;
+	text-align:right;
+	
+	font-family: 'Poppins', sans-serif;
+	font-weight:500;
+	font-size: 20px; 
 	line-height: 16px;
 	letter-spacing:1px;
 	color:#fff;
