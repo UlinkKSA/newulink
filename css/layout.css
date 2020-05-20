@@ -52,6 +52,27 @@ right: 20%;
 	bottom: 50px;
 
 }
+
+@media only screen and (max-width: 767px) {
+	
+	.sponsor{
+		position: absolute;
+		/* right: 75px;	 */
+	
+	}
+		
+		.content{
+			position: absolute;
+			/* left: 75px;	 */
+			top: 3vh;
+		
+		}
+ 
+	}
+  
+
+ 
+
 /* end custom css code */
 
 
@@ -1847,22 +1868,7 @@ figure.vimeo a img, figure.youtube a img {
 	.parallax-2 { background-size: cover; background-attachment: scroll; background-position: top center!important; }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 425px) {
-/* custom css code */
 
-.sponsor{
-
-	position: absolute;
-	margin: auto;
-	}
-	
-	.content{
-		position: absolute;
-		/* bottom: 50px; */
-	
-	}
-	/* end custom css code */
-}
 
 /* #Logos
 ================================================== */
