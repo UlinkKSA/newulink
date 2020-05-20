@@ -38,6 +38,22 @@ Table of contents
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic);
 @import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&subset=devanagari,latin-ext';
 
+/* custom css code */
+
+.sponsor{
+
+position: absolute;
+right: 20%;
+}
+
+.content{
+	position: absolute;
+	left: 20%;
+	bottom: 50px;
+
+}
+/* end custom css code */
+
 
 
 body.royal_preloader {
@@ -1831,6 +1847,22 @@ figure.vimeo a img, figure.youtube a img {
 	.parallax-2 { background-size: cover; background-attachment: scroll; background-position: top center!important; }
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 425px) {
+/* custom css code */
+
+.sponsor{
+
+	position: absolute;
+	margin: auto;
+	}
+	
+	.content{
+		position: absolute;
+		/* bottom: 50px; */
+	
+	}
+	/* end custom css code */
+}
 
 /* #Logos
 ================================================== */
