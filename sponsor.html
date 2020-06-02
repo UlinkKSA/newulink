@@ -29,10 +29,10 @@
   <link rel="stylesheet" href="css/owl.carousel.css" />
   <link rel="stylesheet" href="css/owl.transitions.css" />
   <link rel="stylesheet" href="css/retina.css" />
+
+
+  <link href="css/flat-ui.css" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css" />
-
-
-
 
 
   <!-- Favicons
@@ -139,11 +139,55 @@
 
 
 
-  <div style="text-align: center;">
+  <div style="text-align: center; background-color: rgb(163, 163, 163);">
     <form action="" method="post">
-  <input type="email" name="" id="">
+
+      
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname">
+      <br><br>
+      Requested Sponsorship Type
+      <br>
+      <input type="checkbox" value="Financial"> <label for="Financial">Financial</label>
+      <input type="checkbox" value="Speakers"> <label for="Speakers">Speakers</label>
+      <input type="checkbox" value="Media"> <label for="Media">Media</label>
+      <input type="checkbox" value="otherServices"> <label for="otherServices">Services/Products</label>
+      <br><br> 
+      <p>Gender</p>
+      <div class="slidecontainer">
+        <input type="multiplerange" min="1" max="100" multiple value="50,60" class="slider" id="myRange">
+        <input type="range" multiple value="10,80" />
+
+        <p>age average: <span id="demo"></span></p>
+      </div>      <br><br> 
+      <br><br> 
+      <br><br> 
+      <label for="city">Customer's location:</label>
+      <select id="city" name="city">
+        <option value="Jeddah">Jeddah</option>
+        <option value="Makkah">Makkah</option>
+        <option value="Riyadh">Riyadh</option>
+        <option value="Dammam">Dammam</option>
+      </select>
+      <br><br> 
+      your text here.
+      <br> 
+      <textarea name="message" rows="5" cols="20"></textarea>
+      <br><br>
+
+<div style="margin-left: 40%;   margin-right: 40%;">
+        <input type="submit" value="Submit"><input type="reset">
+        
+</div>
+
 </form>
  </div>
+
+
+
+
+ <script src="/js/flat-ui.js"></script>
+ <script src="/js/custom1.js"></script>
 
 </body>
 
