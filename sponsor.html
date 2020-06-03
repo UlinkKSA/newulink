@@ -50,8 +50,7 @@
   <nav id="menu-wrap" class="menu-back cbp-af-header back-dark2">
     <div class="container">
       <div class="twelve columns">
-        <!-- <div class="logo">
-				</div> -->
+
         <div style="width: 10;">
           <a href="index.html"><img src='images/logo.svg' width="100" height="100" style="margin-bottom: 1.5rem;">
           </a></div>
@@ -70,22 +69,22 @@
   </nav>
 
 
-<div style="margin-top: 20%;">
+  <div style="margin-top: 20%;">
 
 
 
-  <div class="sponsor">
-    <h1>Sponsorship marketing</h1>
-    <br>
+    <div class="sponsor">
+      <h1>Sponsorship marketing</h1>
+      <br>
+    </div>
+
+    <div class="sponsortext">
+      <p>is simply Sponsoring something (or someone) is the act of
+        supporting an event, activity, person, or organization
+        financially or through the provision of products or services</p>
+    </div>
+
   </div>
-
-  <div class="sponsortext">
-    <p>is simply Sponsoring something (or someone) is the act of
-      supporting an event, activity, person, or organization
-      financially or through the provision of products or services</p>
-  </div>
-
-</div>
 
 
 
@@ -140,28 +139,52 @@
 
 
   <div style="text-align: center; background-color: rgb(163, 163, 163);">
+    <h2>apple</h2>
+    <br>
+    <hr>
+    <br>
     <form action="" method="post">
 
-      
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname">
-      <br><br>
+<h4>Brand Information</h4>
+      <label for="cname">company Name:</label>
+      <input type="text" id="cname" name="cname">
+      <br>
+      <label for="crnumber">CR Number:</label>
+      <input type="text" id="crnumber" name="crnumber">
+      <br>
+      <label for="urlcompany">Company's Domain:</label>
+      <input type="url" id="urlcompany" name="urlcompany">
+      <br>  <br>
+      <hr>
+      <br>
+      <h4>Brand Identity</h4>
+      <label for="blogo">brand logo:</label>
+      <input type="file" id="blogo" name="blogo"  data-imagevalidate="yes" data-file-accept="jpg, svg, png" data-file-maxsize="512" data-file-minsize="0" data-file-limit="0" data-component="fileupload">
+      <br>
+      <div class="form-error-message"><img src="https://cdn.jotfor.ms/images/exclamation-octagon.png"> You can only upload following files:<br>pdf, doc, docx, xls, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif<div class="form-error-arrow"><div class="form-error-arrow-inner"></div></div></div>
+      <label for="branddes">Brand Description:</label>
+      <textarea id="branddes" title="Brand Description"  name="branddes" cols="40" rows="6" data-component="textarea" ></textarea>
+
+
+
+      <br>  <br>
+      <hr>
+      <br>
       Requested Sponsorship Type
       <br>
       <input type="checkbox" value="Financial"> <label for="Financial">Financial</label>
       <input type="checkbox" value="Speakers"> <label for="Speakers">Speakers</label>
       <input type="checkbox" value="Media"> <label for="Media">Media</label>
       <input type="checkbox" value="otherServices"> <label for="otherServices">Services/Products</label>
-      <br><br> 
-      <p>Gender</p>
-      <div class="slidecontainer">
-        <input type="multiplerange" min="1" max="100" multiple value="50,60" class="slider" id="myRange">
-        <input type="range" multiple value="10,80" />
+      <br><br>
+      <p>Age Average</p>
+      <div class='multi-range' data-lbound='1' data-ubound='100'>
+        <hr /> 
+        <input type='range' min='1' max='99' step='1' value='1' oninput='this.parentNode.dataset.lbound=this.value;' />
+        <input type='range' min='2' max='100' step='1' value='100'
+          oninput='this.parentNode.dataset.ubound=this.value;' />
+      </div>
 
-        <p>age average: <span id="demo"></span></p>
-      </div>      <br><br> 
-      <br><br> 
-      <br><br> 
       <label for="city">Customer's location:</label>
       <select id="city" name="city">
         <option value="Jeddah">Jeddah</option>
@@ -169,25 +192,25 @@
         <option value="Riyadh">Riyadh</option>
         <option value="Dammam">Dammam</option>
       </select>
-      <br><br> 
-      your text here.
-      <br> 
+      <br><br>
+      your message .
+      <br>
       <textarea name="message" rows="5" cols="20"></textarea>
       <br><br>
 
-<div style="margin-left: 40%;   margin-right: 40%;">
+      <div style="margin-left: 40%;   margin-right: 40%;">
         <input type="submit" value="Submit"><input type="reset">
-        
-</div>
 
-</form>
- </div>
+      </div>
 
-
+    </form>
+  </div>
 
 
- <script src="/js/flat-ui.js"></script>
- <script src="/js/custom1.js"></script>
+
+
+  <script src="/js/flat-ui.js"></script>
+  <script src="/js/custom1.js"></script>
 
 </body>
 
