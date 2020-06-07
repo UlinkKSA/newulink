@@ -31,8 +31,9 @@
   <link rel="stylesheet" href="css/retina.css" />
 
 
-  <link href="css/flat-ui.css" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css" />
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
   <!-- Favicons
@@ -139,13 +140,25 @@
 
 
   <div style="text-align: center; background-color: rgb(163, 163, 163);">
-    <h2>apple</h2>
+    <h2>application form</h2>
     <br>
     <hr>
-    <br>
+ 
     <form action="" method="post">
-
-<h4>Brand Information</h4>
+      <h3>Personal Information</h3>
+      <br>
+      <label for="cname">Name:</label>
+      <input type="text" id="name" name="name">
+      <br>
+      <label for="crnumber">Email:</label>
+      <input type="text" id="email" name="email">
+      <br>
+      <label for="urlcompany">Phone Number <small>(Optional)</small>:</label>
+      <input type="text" id="phnumber" name="phnumber">
+      <br>  <br>
+      <hr>
+<h3>Brand Information</h3>
+<br>
       <label for="cname">company Name:</label>
       <input type="text" id="cname" name="cname">
       <br>
@@ -156,12 +169,12 @@
       <input type="url" id="urlcompany" name="urlcompany">
       <br>  <br>
       <hr>
+     
+      <h3>Brand Identity</h3>
       <br>
-      <h4>Brand Identity</h4>
       <label for="blogo">brand logo:</label>
       <input type="file" id="blogo" name="blogo"  data-imagevalidate="yes" data-file-accept="jpg, svg, png" data-file-maxsize="512" data-file-minsize="0" data-file-limit="0" data-component="fileupload">
-      <br>
-      <div class="form-error-message"><img src="https://cdn.jotfor.ms/images/exclamation-octagon.png"> You can only upload following files:<br>pdf, doc, docx, xls, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif<div class="form-error-arrow"><div class="form-error-arrow-inner"></div></div></div>
+      <br>  <br>
       <label for="branddes">Brand Description:</label>
       <textarea id="branddes" title="Brand Description"  name="branddes" cols="40" rows="6" data-component="textarea" ></textarea>
 
@@ -169,34 +182,83 @@
 
       <br>  <br>
       <hr>
+      <h3>Marketing Information</h3>
+<br>
       <br>
-      Requested Sponsorship Type
       <br>
-      <input type="checkbox" value="Financial"> <label for="Financial">Financial</label>
-      <input type="checkbox" value="Speakers"> <label for="Speakers">Speakers</label>
-      <input type="checkbox" value="Media"> <label for="Media">Media</label>
-      <input type="checkbox" value="otherServices"> <label for="otherServices">Services/Products</label>
-      <br><br>
+      <h4>Targeted Audience</h4>
+      <br>
       <p>Age Average</p>
-      <div class='multi-range' data-lbound='1' data-ubound='100'>
+      <div class='multi-range' data-lbound='1' data-ubound='100' style=" margin: auto;">
         <hr /> 
         <input type='range' min='1' max='99' step='1' value='1' oninput='this.parentNode.dataset.lbound=this.value;' />
         <input type='range' min='2' max='100' step='1' value='100'
           oninput='this.parentNode.dataset.ubound=this.value;' />
       </div>
-
-      <label for="city">Customer's location:</label>
+      <br> 
+    <h5>Customer's location:</h5>
+      <br> 
       <select id="city" name="city">
         <option value="Jeddah">Jeddah</option>
         <option value="Makkah">Makkah</option>
         <option value="Riyadh">Riyadh</option>
         <option value="Dammam">Dammam</option>
       </select>
-      <br><br>
-      your message .
       <br>
-      <textarea name="message" rows="5" cols="20"></textarea>
+      <br>
+      <br>
+      <h4>Targeted Audience</h4>
+      <br>
+
+<br>
+<h6>Social Media Interaction</h6>
+<input type="checkbox" value="twitter"> <label for="twitter">twitter</label>
+<input type="checkbox" value="instagram"> <label for="instagram">instagram</label>
+<input type="checkbox" value="linkedin"> <label for="linkedin">linkedin</label>
+<input type="checkbox" value="othersocial"> <label for="othersocial">other</label> <input type="text" name="othersocial" id="othersocial">
+<br>
+
+<br>
+<br>
+
+
+
+<br>
+<br>
+
+
+
+
+
+      <h5>Requested Sponsorship Type</h5>
+      <br>
+      <input type="checkbox" value="Financial"> <label for="Financial">Financial</label>
+      <input type="checkbox" value="Speakers"> <label for="Speakers">Speakers</label>
+      <input type="checkbox" value="Media"> <label for="Media">Media</label>
+      <input type="checkbox" value="otherServices"> <label for="otherServices">Services/Products</label>
       <br><br>
+      
+
+
+
+      <br>
+      <h5>Social Media Links </h5>
+<div class="row">
+  <div class="col-lg-12">
+      <div id="inputFormRow">
+          <div class="input-group mb-3">
+              <input type="text" name="title[]" class="form-control m-input" placeholder="URL" autocomplete="off">
+              <div class="input-group-append">
+                  <button id="removeRow" type="button" class="btn btn-danger">Remove</button>
+              </div>
+          </div>
+      </div>
+
+      <div id="newRow"></div>
+      <button id="addRow" type="button" class="btn btn-info">Add new URL</button>
+  </div>
+</div>
+<br>
 
       <div style="margin-left: 40%;   margin-right: 40%;">
         <input type="submit" value="Submit"><input type="reset">
@@ -207,9 +269,26 @@
   </div>
 
 
+<script> 
+ $("#addRow").click(function () {
+  var html = '';
+  html += '<div id="inputFormRow">';
+  html += '<div class="input-group mb-3">';
+  html += '<input type="text" name="title[]" class="form-control m-input" placeholder="URL" autocomplete="off">';
+  html += '<div class="input-group-append">';
+  html += '<button id="removeRow" type="button" class="btn btn-danger">Remove</button>';
+  html += '</div>';
+  html += '</div>';
 
+  $('#newRow').append(html);
+});
 
-  <script src="/js/flat-ui.js"></script>
+// remove row
+$(document).on('click', '#removeRow', function () {
+  $(this).closest('#inputFormRow').remove();
+});
+</script>
+
   <script src="/js/custom1.js"></script>
 
 </body>
