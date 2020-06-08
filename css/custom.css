@@ -1,3 +1,9 @@
+
+	body{
+		background-color:#141414 ;
+	}
+
+
 .sponsor{
 /* text-align: center; */
 
@@ -35,14 +41,49 @@
 .multi-range > input[type=range]::-ms-thumb { transform: translateY(-18px); }
 .multi-range > input[type=range]::-ms-track { -webkit-appearance: none; height: 0px; }
 .multi-range::after { 
-    content: attr(data-lbound) ' - ' attr(data-ubound); 
+    content: attr(data-lbound) ' - ' attr(data-ubound);
+     <br>
     position: absolute; top: 0; left: 100%; white-space: nowrap;
-    display: block; padding: 0px 4px; margin: -1px 2px;
-    height: 26px; width: auto; border: 1px solid #ddd; 
+    display: block; padding: 0px 4px; margin: 30px 2px;
+    /* height: 26px; width: auto; border: 1px solid #ddd;  */
     font-size: 13px; line-height: 26px;
 }
 
+.appform{
 
+background-color: rgba(71, 71, 71, 0.548);
+text-align: center;
+color: orange;
+margin-left: 100px;
+margin-right: 100px;
+
+}
+h2{
+ background-color: orange;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  button {
+    background-color: rgb(133, 185, 135);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+   background-color: rgb(177, 177, 177);
+  color: black;
+  }
 /* 
 .slider {
     -webkit-appearance: none;
