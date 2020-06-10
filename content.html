@@ -142,7 +142,7 @@
 
 
     <div class="form-style-5">
-      <form>
+      <form action="" method="post">
       <fieldset>
       <legend><span class="number">1</span>Personal Information
       </legend>
@@ -154,16 +154,36 @@
         <fieldset>
       <legend><span class="number">2</span>Brand Information</legend>
        <input type="text" name="cname" placeholder="company Name *">
-      <input type="email" name="crnumber" placeholder="CR Number *">
        <input type="text" name="urlcompany" placeholder="Company's Domain *">
       </fieldset>
         
           <fieldset>
       <legend><span class="number">3</span>Brand Identity</legend>
+      <legend1>brand logo:</legend1>
+      <input type="file" id="blogo" name="blogo"  data-imagevalidate="yes" data-file-accept="jpg, svg, png" data-file-maxsize="512" data-file-minsize="0" data-file-limit="0" data-component="fileupload">
+      <br> <br>
+      <input type="text" name="conname" placeholder="Content Creators Name *">
                 <textarea name="branddes" placeholder="Brand Description"></textarea>
-             <legend1>brand logo:</legend1>
-       <input type="file" id="blogo" name="blogo"  data-imagevalidate="yes" data-file-accept="jpg, svg, png" data-file-maxsize="512" data-file-minsize="0" data-file-limit="0" data-component="fileupload">
-      </fieldset>
+
+                <label for="city">Content Type:</label>
+                <br>   
+                 <div class="container1">
+                    <div class="check-container">
+                      <input type="checkbox" id="audio">
+                      <label for="audio"></label>
+                      <span class="tag">Audio</span>
+                    </div>
+                      <div class="check-container">
+                      <input type="checkbox" id="video">
+                      <label for="video"></label>
+                      <span class="tag">Video</span>
+                    </div>
+                    <div class="check-container">
+                      <input type="checkbox" id="pictures">
+                      <label for="pictures"></label>
+                      <span class="tag">Pictures</span>
+                    </div>
+                  </fieldset>
               <br> <br>
           <fieldset>
       <legend><span class="number">4</span>Marketing Information
