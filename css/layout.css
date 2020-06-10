@@ -53,6 +53,20 @@ right: 20%;
 
 }
 @media only screen and (max-width: 425px){
+	.full-img img {
+		/* background-color: red; */
+		width:30%;
+		position: absolute;
+		right: 20px;
+		bottom: 88vh;
+		/* repeat: no-repeat; */
+		/* attachment: fixed; */
+		/* position: right;  */
+		/* display:block;
+	 float: right;
+	 clear:right; */
+		/* border:none; */
+	}
 	.left1{
 
 	text-align: left;
@@ -790,6 +804,7 @@ ul.slimmenu.collapsed li > ul {
 	width:30%;
 	position: absolute;
 	right: 16px;
+	/* bottom: 88vh; */
 	/* repeat: no-repeat; */
 	/* attachment: fixed; */
 	/* position: right;  */
