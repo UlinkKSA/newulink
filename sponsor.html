@@ -136,159 +136,153 @@
   </div>
 
 
-
-
-
   <div class="appform">
-    <h2>Application form</h2>
-    <br>
-    <hr>
- 
-    <form action="" method="post">
-      <h3>Personal Information</h3>
-      <br>
-      <label for="cname">Name:</label>
-      <input type="text" id="name" name="name">
-      <br>
-      <label for="crnumber">Email:</label>
-      <input type="text" id="email" name="email">
-      <br>
-      <label for="urlcompany">Phone Number <small>(Optional)</small>:</label>
-      <input type="text" id="phnumber" name="phnumber">
-      <br>  <br>
-      <hr>
-<h3>Brand Information</h3>
-<br>
-      <label for="cname">company Name:</label>
-      <input type="text" id="cname" name="cname">
-      <br>
-      <label for="crnumber">CR Number:</label>
-      <input type="text" id="crnumber" name="crnumber">
-      <br>
-      <label for="urlcompany">Company's Domain:</label>
-      <input type="url" id="urlcompany" name="urlcompany">
-      <br>  <br>
-      <hr>
-     
-      <h3>Brand Identity</h3>
-      <br>
-      <label for="blogo">brand logo:</label>
-      <input type="file" id="blogo" name="blogo"  data-imagevalidate="yes" data-file-accept="jpg, svg, png" data-file-maxsize="512" data-file-minsize="0" data-file-limit="0" data-component="fileupload">
-      <br>  <br>
-      <label for="branddes">Brand Description:</label>
-      <textarea id="branddes" title="Brand Description"  name="branddes" cols="40" rows="6" data-component="textarea" ></textarea>
 
 
-
-      <br>  <br>
-      <hr>
-      <h3>Marketing Information</h3>
-<br>
-    
-      <h4>Targeted Audience</h4>
-      <br>
-      <p>Age Average</p>
-      <div class='multi-range' data-lbound='1' data-ubound='100' style=" margin: auto;">
-      <hr /> 
-     <input type='range' min='1' max='99' step='1' value='1' oninput='this.parentNode.dataset.lbound=this.value;' />
-      <input type='range' min='2' max='100' step='1' value='100'
-          oninput='this.parentNode.dataset.ubound=this.value;' />
-      </div> 
-      <br><br> 
-    <h5>Customer's location:</h5>
-      <br> 
-      <select id="city" name="city">
-        <option value="Jeddah">Jeddah</option>
-        <option value="Makkah">Makkah</option>
-        <option value="Riyadh">Riyadh</option>
-        <option value="Dammam">Dammam</option>
-      </select>
-      <br>
-      <br>
-      <br>
-      <h4>Targeted Audience</h4>
-      <br>
-
-<br>
-<h6>Social Media Interaction</h6>
-<input type="checkbox" value="twitter"> <label for="twitter">twitter</label>
-<input type="checkbox" value="instagram"> <label for="instagram">instagram</label>
-<input type="checkbox" value="linkedin"> <label for="linkedin">linkedin</label>
-<input type="checkbox" value="othersocial"> <label for="othersocial">other</label> <input type="text" name="othersocial" id="othersocial">
-<br>
-
-<br>
-<br>
-
-
-
-<br>
-<br>
-
-
-
-
-
-      <h5>Requested Sponsorship Type</h5>
-      <br>
-      <input type="checkbox" value="Financial"> <label for="Financial">Financial</label>
-      <input type="checkbox" value="Speakers"> <label for="Speakers">Speakers</label>
-      <input type="checkbox" value="Media"> <label for="Media">Media</label>
-      <input type="checkbox" value="otherServices"> <label for="otherServices">Services/Products</label>
-      <br><br>
+    <div class="form-style-5">
+      <form>
+      <fieldset>
+      <legend><span class="number">1</span>Personal Information
+      </legend>
+      <input type="text" name="name" placeholder="Your Name *">
+      <input type="email" name="email" placeholder="Your Email *">
+       <input type="text" name="phnumber" placeholder="Phone Number *">
+        </fieldset>
+        
+        <fieldset>
+      <legend><span class="number">2</span>Brand Information</legend>
+       <input type="text" name="cname" placeholder="company Name *">
+      <input type="email" name="crnumber" placeholder="CR Number *">
+       <input type="text" name="urlcompany" placeholder="Company's Domain *">
+      </fieldset>
+        
+          <fieldset>
+      <legend><span class="number">3</span>Brand Identity</legend>
+                <textarea name="branddes" placeholder="Brand Description"></textarea>
+             <legend1>brand logo:</legend1>
+       <input type="file" id="blogo" name="blogo"  data-imagevalidate="yes" data-file-accept="jpg, svg, png" data-file-maxsize="512" data-file-minsize="0" data-file-limit="0" data-component="fileupload">
+      </fieldset>
+              <br> <br>
+          <fieldset>
+      <legend><span class="number">4</span>Marketing Information
+      </legend>
+            <br>
+            <legend1>Targeted Audience</legend1>
+            
+             
+      <div class="container">
       
-
-
-
-      <br>
-      <h5>Social Media Links </h5>
-<div class="row">
-  <div class="col-lg-12">
-      <div id="inputFormRow">
-          <div class="input-group mb-3">
-              <input type="text" name="title[]" class="form-control m-input" placeholder="URL" autocomplete="off">
-              <div class="input-group-append">
-                  <button id="removeRow" type="button" class="btn btn-danger">Remove</button>
-              </div>
+              <label >Age Average:</label>
+      
+        <div class="row">
+          <div class="col-sm-4">
+            <div id="slider-range"></div>
           </div>
+        </div>
+        <div class="row slider-labels">
+          <div class="col-xs-4 caption">
+            Age between: <span id="slider-range-value1"></span> - <span id="slider-range-value2"></span> <b>years old</b>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <form>
+              <input type="hidden" name="min-value" value="">
+              <input type="hidden" name="max-value" value="">
+            </form>
+          </div>
+        </div>
+      </div>
+              <br> <br>
+            <label for="city">Customer's location:</label>
+      <select id="city" name="city">
+        <option value="jeddah">Jeddah</option>
+        <option value="riyadh">Riyadh</option>
+        <option value="dammam">Dammam</option>
+        <option value="othercity">Other</option>
+      </select>
+      <input type="text" name="othercity" placeholder="other city">
+
+
+      
+      <label for="city">Social Media Interaction:</label>
+      <br>   
+       <div class="container1">
+          <div class="check-container">
+            <input type="checkbox" id="twitter">
+            <label for="twitter"></label>
+            <span class="tag">Twitter</span>
+          </div>
+          <div class="check-container">
+            <input type="checkbox" id="linkedin">
+            <label for="linkedin"></label>
+            <span class="tag">Linkedin</span>
+          </div>
+          <div class="check-container">
+            <input type="checkbox" id="instagram">
+            <label for="instagram"></label>
+            <span class="tag">Instagram</span>
+          </div>
+            <div class="check-container">
+            <input type="checkbox" id="othersocial">
+            <label for="othersocial"></label>
+            <span class="tag">Other</span>
+          </div>
+        </div>
+            <input type="text" name="othersocial" id="othersocial" placeholder="Other social">
+      <br>
+            
+            
+            
+            <label for="city">Social Media Interaction:</label>
+      <br>   
+       <div class="container1">
+          <div class="check-container">
+            <input type="checkbox" id="financial">
+            <label for="financial"></label>
+            <span class="tag">Financial</span>
+          </div>
+            <div class="check-container">
+            <input type="checkbox" id="media">
+            <label for="media"></label>
+            <span class="tag">Media</span>
+          </div>
+          <div class="check-container">
+            <input type="checkbox" id="speakers">
+            <label for="speakers"></label>
+            <span class="tag">Speakers</span>
+          </div>
+        
+         
+         
+            <div class="check-container">
+            <input type="checkbox" id="otherServices">
+            <label for="otherServices"></label>
+            <span class="tag">Services/Products</span>
+          </div>
+        </div>
+      <br>
+      </fieldset>
+        
+        
+        
+        
+        
+        
+      <br><br>
+      <input type="submit" value="Apply" />
+      </form>
       </div>
 
-      <div id="newRow"></div>
-      <button id="addRow" type="button" class="btn btn-info">Add new URL</button>
-  </div>
-</div>
-<br>
 
-      <div style="margin-left: 40%;   margin-right: 40%;">
-        <input type="submit" value="Submit"><input type="reset">
-
-      </div>
-
-    </form>
   </div>
 
 
-<script> 
- $("#addRow").click(function () {
-  var html = '';
-  html += '<div id="inputFormRow">';
-  html += '<div class="input-group mb-3">';
-  html += '<input type="text" name="title[]" class="form-control m-input" placeholder="URL" autocomplete="off">';
-  html += '<div class="input-group-append">';
-  html += '<button id="removeRow" type="button" class="btn btn-danger">Remove</button>';
-  html += '</div>';
-  html += '</div>';
+ 
 
-  $('#newRow').append(html);
-});
-
-// remove row
-$(document).on('click', '#removeRow', function () {
-  $(this).closest('#inputFormRow').remove();
-});
-</script>
 
   <script src="/js/custom1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </body>
 
